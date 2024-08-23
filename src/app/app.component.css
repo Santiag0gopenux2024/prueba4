@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  font-family: "Abyssinica SIL";
+  font-size: 30px;
+  margin: 20px;
+}
+
+h2 {
+  font-family: "Abyssinica SIL";
+  font-size: 23px;
+  margin: 25px;
+}
+
+.names {
+  font-family: "Abyssinica SIL";
+  font-size: 18px;
+}
+
+.error-message {
+  font-family: "Abyssinica SIL";
+  color: red;
+  font-weight: bold;
+}
