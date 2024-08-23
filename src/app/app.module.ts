@@ -1,12 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './routing/app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { UserService } from "./services/user.service";
-import { HttpClientModule } from "@angular/common/http";
-
-import { UserModule } from "./modules/user.module";
+import { UserModule } from './modules/user.module';
 
 @NgModule({
   declarations: [
@@ -14,11 +10,10 @@ import { UserModule } from "./modules/user.module";
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
+    AppRoutingModule,
     UserModule
   ],
-  providers: [UserService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
