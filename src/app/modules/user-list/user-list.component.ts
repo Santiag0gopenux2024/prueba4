@@ -12,10 +12,10 @@ export class UserListComponent implements OnInit {
   users: UserName[] = [];
   errorMessage: string | null = null;
 
-  constructor(private userService: UserService, private router: Router) { }
+  constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit(): void {
-    this.userService.getUsers().subscribe!(
+    this.userService.getUsers().subscribe(
       data => {
         this.users = data;
         this.errorMessage = null;
@@ -26,7 +26,7 @@ export class UserListComponent implements OnInit {
     );
   }
 
-  viewDetails(userId: number): void {
-    this.router.navigate(['/user', userId]);
+  viewDetails(id: number): void {
+    this.router.navigate(['/user', id]);
   }
 }

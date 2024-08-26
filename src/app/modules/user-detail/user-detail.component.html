@@ -1,7 +1,11 @@
-<div *ngIf="errorMessage" class="error-message">
-  {{ errorMessage }}
+<div class="names">
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="user">
+    <h2>{{ user.name }}</h2>
+    <button mat-stroked-button (click)="goBack()">Volver a la lista de usuarios</button>
+  </div>
 </div>
 
-<div *ngIf="user">
-  <h2>{{ user.name }}</h2>
-</div>

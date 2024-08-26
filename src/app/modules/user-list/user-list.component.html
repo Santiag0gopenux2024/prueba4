@@ -3,9 +3,10 @@
     {{ errorMessage }}
   </div>
 
-  <ul *ngIf="!errorMessage">
-    <li *ngFor="let user of users" (click)="viewDetails(user.id)">
+  <ul *ngIf="!errorMessage" class="names">
+    <li *ngFor="let user of users">
       {{ user.name }}
+      <button mat-raised-button color="primary" (click)="viewDetails(user.id)">Ver Detalles</button>
     </li>
   </ul>
 </div>

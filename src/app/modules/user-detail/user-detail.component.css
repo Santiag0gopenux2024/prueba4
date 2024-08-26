@@ -1,0 +1,12 @@
+.names {
+  text-align: center;
+  font-family: "Abyssinica SIL";
+  font-size: 18px;
+  margin: 20px;
+}
+
+.error-message {
+  font-family: "Abyssinica SIL";
+  color: red;
+  font-weight: bold;
+}
