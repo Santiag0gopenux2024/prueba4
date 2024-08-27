@@ -1,9 +1,9 @@
 // //Crear una clase llamada Impresora (Printer) con los métodos: Modelo (model), Escanear (scan), Imprimir (print), Copiar (copy).
 // export class Printer {
-//   constructor(private Name: string) {}
+//   constructor(private name: string) {}
 //
 //   model(): string {
-//     return this.Name;
+//     return this.name;
 //   }
 //
 //   scan(): void {
@@ -25,20 +25,20 @@
 // import { Printer } from '';
 //
 // export class Hp extends Printer {
-//   constructor(Name: string) {
-//     super(Name);
+//   constructor(name: string) {
+//     super(name);
 //   }
 // }
 //
 // export class Canon extends Printer {
-//   constructor(Name: string) {
-//     super(Name);
+//   constructor(mame: string) {
+//     super(name);
 //   }
 // }
 //
 // export class Brother extends Printer {
-//   constructor(Name: string) {
-//     super(Name);
+//   constructor(name: string) {
+//     super(name);
 //   }
 // }
 //
